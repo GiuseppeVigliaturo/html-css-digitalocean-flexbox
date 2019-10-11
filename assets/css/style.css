@@ -153,7 +153,7 @@ form a img.imglogin{
 
 #customer ul{
   display: flex;
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
 }
 
 #customer li{
@@ -261,7 +261,9 @@ ul li img.social{
 
 @media screen and (min-width:992px) {
 
-
+  #customer li{
+    width: calc((100% / 6) - 4px);
+  }
 
 }
 
@@ -275,6 +277,11 @@ ul li img.social{
 .hamburger{
   display: block;
 }
+
+#customer li{
+  width: calc((100% / 3) - 4px);
+}
+
 /*
 #customer li{
   display: inline-block;
@@ -296,6 +303,10 @@ ul li img.social{
 
   .hamburger{
     display: block;
+  }
+
+  #customer li{
+    width: calc((100% / 2) - 4px);
   }
 /*
   #customer li{
